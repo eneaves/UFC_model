@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+*.DS_Store
+out_rf/*.csv
+out_rf/*.png
+ufc_rf_report/*.docx
+ufc_rf_report/*.pdf
+
