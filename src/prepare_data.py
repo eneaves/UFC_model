@@ -7,7 +7,8 @@ Prepara el dataset UFC para un modelo desde cero, evitando fuga de información 
 - Divide en train/val/test de forma estratificada
 - Guarda CSVs y features.json con el orden de columnas
 Uso (ejemplo):
-  python prepare_data.py --csv ufc_clean.csv --outdir ./out_rf
+  python -m src.prepare_data
+  python -m src.prepare_data --csv data/ufc_clean.csv --outdir data
 """
 import argparse, json, math, os, random
 from typing import List, Tuple
@@ -94,8 +95,8 @@ def stratified_split(X: pd.DataFrame, y: pd.Series,
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--csv", type=str, default="ufc_clean.csv", help="Ruta al CSV limpio original")
-    parser.add_argument("--outdir", type=str, default="out_rf", help="Carpeta de salida")
+    parser.add_argument("--csv", type=str, default="data/ufc_clean.csv", help="Ruta al CSV limpio original")
+    parser.add_argument("--outdir", type=str, default="data", help="Carpeta de salida (data/)")
     args = parser.parse_args()
 
     os.makedirs(args.outdir, exist_ok=True)

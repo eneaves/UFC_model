@@ -2,8 +2,19 @@ __pycache__/
 *.pyc
 *.pyo
 *.DS_Store
+
 out_rf/*.csv
 out_rf/*.png
-ufc_rf_report/*.docx
-ufc_rf_report/*.pdf
 
+# Reportes Word sí se ignoran
+ufc_rf_report/*.docx
+
+# ⚠️ Quitamos el filtro de PDF aquí para que el reporte final se suba
+# ufc_rf_report/*.pdf
+
+outputs/
+
+# IDE / Jupyter metadata
+.ipynb_checkpoints/
+.vscode/
+.idea/
