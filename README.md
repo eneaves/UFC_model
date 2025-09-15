@@ -1,7 +1,3 @@
-Aquí lo tienes, Emiliano ✅. Este es el **README completo en Markdown**, listo para copiar y pegar en tu repo.
-
----
-
 # 🥊 UFC Model – Predicting Fight Outcomes
 
 Este proyecto implementa modelos de **Árbol de Decisión** y **Random Forest** para predecir resultados de peleas de UFC.
